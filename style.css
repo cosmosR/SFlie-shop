@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;400;600;700;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
+
+
+*
+{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+body
+{    
+	    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+nav
+{ 
+position: fixed;
+
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 10px 30px;
+z-index:10000 ;
+align-items: center;
+}
+
+nav .logo
+{
+	color: #5790FF;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+nav ul
+{
+	display: flex;
+	justify-content: center;
+	
+}
+nav ul li
+{
+	list-style: none;
+	margin-left: 20px;
+}
+nav ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #000;
+	border-radius: 20px;
+}
+
+nav ul li a:hover ,nav ul li a.active
+{
+	background: #5790FF;
+	color: white;
+}
+
+section 
+{
+	position: relative;
+	height: 100vh;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main
+{
+	background: linear-gradient(90.96deg, #5790FF 67.62%, rgba(255, 255, 255, 0) 125.5%);
+}
+
+section:before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background:linear-gradient(to top, white, white, transparent);
+	z-index: 1000;
+}
+section img
+{
+	
+	top: 0;
+	
+	object-fit: cover;
+	font-weight: 900;
+}
+
+
+
+
+#dragon-a
+{
+	position: absolute;
+	width: 60vw;
+	right: 4vw;
+	top: 6vw;
+	mix-blend-mode:color;
+}
+#main-bg
+{ width: 100%;
+	height: 100vh;
+z-index: 10;
+}
+.main-container
+{
+	position: absolute;
+	left: 15vw;
+	top: 20vw;
+	z-index: 10;
+}
+
+#text
+{ 
+	white-space: nowrap;
+	font-size: 7vw;
+	font-weight: 900;
+	white-space: nowrap;
+	 background: linear-gradient(180deg, #5790FF 0%, #64506B 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	z-index: 11;
+
+}
+
+.go-to
+{
+text-decoration: none;
+	display: inline-block;
+	padding: 8px 30px;
+background: #FF7E91;
+box-shadow: -2px 6px 4px rgba(255, 152, 152, 0.52);
+border-radius: 140px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;
+color: white;
+margin-top: 5vw;
+
+z-index: 10;
+
+}
+.item1
+{
+	background: url(./img/item1-bgg.png);
+	background-position: center;
+	background-size: cover;
+	
+}
+.item-info
+{ 	position: absolute;
+	
+	left: 10vw;
+	top: 10vw;
+	
+	width: 30vw;
+	
+}
+.item-name-kr
+{   display: inline-block;
+	font-size: 3vw;
+}
+.item-name-en
+{    display: inline-block;
+	font-size: 4vw;
+}
+
+
+
+.item2
+{
+	background: url(./img/item2-bg.png);
+	background-position: center;
+	background-size: cover;
+	
+}
+
+
+#item1-img
+{  
+	position: absolute;
+	width: 40vw;
+}
+
+.next-detail
+{
+text-decoration: none;
+	display: inline-block;
+	padding: 8px 30px;
+background: #fff;
+box-shadow: -2px 6px 4px black;
+border-radius: 140px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;
+color: black;
+margin-top: 5vw;
+
+z-index: 10;
+
+}
+
+
+.item1-detail 
+{
+	display: block;
+	position: relative;
+  font-size: 2vw;
+  background: #fff;
+ 
+}
+
+.item1-detail h3
+{
+	padding: 10px 10px;
+}
+.item1-detail-content
+{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 20px;
+}
+.item1-detail-content img
+
+{ display: block;
+	width: 80%;
+	margin: auto;
+}
+.item1-detail-content h4, p
+{
+	padding: 10px 10px;
+text-align: center;
+
+}
+.item1-detail-1, .item1-detail-2, .item1-detail-3
+{
+	width: 25%;
+
+
+	padding: 5px 10px;
+	padding-bottom: 30px;
+
+	background: white;
+border-radius: 16px;
+
+
+
+}
+
+.item1-detail-content h4
+{
+	font-size: 1.2rem;
+}
+.item1-detail-content p
+{
+	font-size: 1rem;
+	color: navy;
+}
+.detailtext-contain
+{ 
+height:50%;
+ }
+
+ .plus-content{
+ 	display: flex;
+ 	flex-wrap: wrap;
+	padding: 5px 10px;
+	padding-bottom: 30px;
+	margin: 20px;
+	margin-top: 40px;
+
+	background: white;/*linear-gradient(360deg, #FFFFFF -67.86%, #FFFAE8 100%), #FFFAE8;*/
+border-radius: 16px;
+border:3px solid beige;
+
+ }
+  .plus-content h4{
+  	width: 20%;
+  }
+
+  .plus-content p {
+  	width: 20%;
+  }
